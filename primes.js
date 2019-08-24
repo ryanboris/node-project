@@ -1,0 +1,16 @@
+const primes = () => {
+  const primeNums = []
+  const compositeNums = []
+  for (let i = 2; i <= 100; i++) {
+    if (i === 2 || i === 3 || i === 5 || i === 7) {
+      primeNums.push(i)
+    } else if (i % 2 === 0 || i % 3 === 0 || i % 5 === 0 || i % 7 === 0) {
+      compositeNums.push(i)
+    } else {
+      primeNums.push(i)
+    }
+  }
+  return primeNums
+}
+
+module.exports = primes
